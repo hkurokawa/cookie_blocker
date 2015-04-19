@@ -20,12 +20,10 @@ function update() {
             listener,
             {urls: ["<all_urls>"]},
             ["blocking", "requestHeaders"]);
-        console.log("Added an listener.");
         chrome.browserAction.setBadgeText({"text": "Block"});
         chrome.browserAction.setBadgeBackgroundColor({"color": [255, 0, 0, 255]});
     } else {
         chrome.webRequest.onBeforeSendHeaders.removeListener(listener);
-        console.log("Removed listener.");
         chrome.browserAction.setBadgeText({"text": "Allow"});
         chrome.browserAction.setBadgeBackgroundColor({"color": [0, 255, 0, 255]});
     }
