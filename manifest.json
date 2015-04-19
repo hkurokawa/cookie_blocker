@@ -11,10 +11,10 @@
       "https://*/"
   ],
   "background": {
-      "scripts" : ["js/background.js"],
-      "persistent": false
-  }
+      "scripts" : ["js/background.js"]
+  },
   "browser_action": {
-	  "default_title": "Cookie Blocker"
+	  "default_title": "Cookie Blocker",
+      "default_icon": "icons/icon__cookie.png"
   }
 }
