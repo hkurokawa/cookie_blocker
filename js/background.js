@@ -24,8 +24,7 @@ function update() {
         chrome.browserAction.setBadgeBackgroundColor({"color": [255, 0, 0, 255]});
     } else {
         chrome.webRequest.onBeforeSendHeaders.removeListener(listener);
-        chrome.browserAction.setBadgeText({"text": "Allow"});
-        chrome.browserAction.setBadgeBackgroundColor({"color": [0, 255, 0, 255]});
+        chrome.browserAction.setBadgeText({"text": ""});
     }
     chrome.tabs.getSelected(null, function(tab) {
         chrome.tabs.reload(tab.id);
