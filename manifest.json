@@ -4,6 +4,10 @@
   "name": "Cookie Blocker",
   "description": "This extension blocks sending any cookiee stored on your Chrome",
   "version": "1.0",
+  "icons": {
+      "48": "icons/icon__cookie_48.png",
+      "128": "icons/icon__cookie_128.png"
+  },
   "permissions": [
       "webRequest",
       "webRequestBlocking",
