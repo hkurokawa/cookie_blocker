@@ -19,6 +19,9 @@
   },
   "browser_action": {
 	  "default_title": "Cookie Blocker",
-      "default_icon": "icons/icon__cookie.png"
+      "default_icon" : {
+          "19" : "icons/icon__cookie_19.png",
+          "38" : "icons/icon__cookie_38.png"
+      }
   }
 }
